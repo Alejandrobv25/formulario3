@@ -1,0 +1,11 @@
+body {
+  background-image: url('https://img3.wallspic.com/crops/2/2/4/0/1/110422/110422-raya-2560x1600.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+::placeholder {
+  color: #bfc9d1 !important;
+  opacity: 1; /* Para que no se vea más transparente */
+}

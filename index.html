@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="card m-5 ">
+      <div class="card-header text-center" style="background-color: lightgray">
+        <h1>Cuanto me conoces?</h1>
+      </div>
+      <div class="card-body">
+        <div class="alert alert-info" role="alert" style="margin-top: 30px">
+          Debes rellenar todos los campos!!
+        </div>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="name" class="form-label">Como me llamo?</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Pepito"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="surname" class="form-label"
+              >Te sabes mis apellidos?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              placeholder="Martinez Botella"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="age" class="form-label">Cuantos años tengo?</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              placeholder="20"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="birthday" class="form-label"
+              >Cuando es mi cumpleaños?</label
+            >
+            <input type="date" class="form-control" id="birthday" required />
+          </div>
+          <div class="col-md-4">
+            <label for="city" class="form-label">En que ciudad nací?</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="Madrid"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="town" class="form-label">En que pueblo vivo?</label>
+            <select name="town" id="town" class="form-select">
+              <option value="value1">Pianya</option>
+              <option value="value2">Alaquas</option>
+              <option value="value3">Aldia</option>
+              <option value="value4">Xirivella</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="color" class="form-label"
+              >Cual es mi color favorito?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="color"
+              placeholder="Azul"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="food" class="form-label"
+              >Cual es mi comida favorita?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="food"
+              placeholder="Hamburguesa"
+              required
+            />
+          </div>
+          <!-- ...código existente... -->
+          <div class="col-md-6">
+            <label for="input" class="form-label"
+              >Que tendria si pudiera?</label
+            >
+            <div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa-solid fa-otter fa-4x"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  ><i class="fa-solid fa-cat fa-4x"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  ><i class="fa-solid fa-horse fa-4x"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio4"
+                  value="option4"
+                />
+                <label class="form-check-label" for="inlineRadio4"
+                  ><i class="fa-solid fa-dragon fa-4x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <!-- ...código existente... -->
+          <div class="col-md-6">
+            <label for="comments">Como me describirias?</label>
+            <textarea
+              class="form-control"
+              id="comments"
+              style="height: 100px"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-end" style="background-color: lightgray">
+        <button type="button" class="btn btn-secondary">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
